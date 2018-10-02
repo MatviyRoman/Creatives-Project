@@ -320,6 +320,7 @@ header #scrollDown {
 }
 
 .quick-action {
+	display: none;
 	background: #11749e;
 	text-align: center;
 	height: 350px;
@@ -348,17 +349,24 @@ header #scrollDown {
 }
 
 .key-feature {
-	display: none;
 	background: url('../image/bg2.jpg') no-repeat;
 	background-size: 100% 100%;
-	/*height: 850px;*/
-	height: 100%;
+	height: 850px;
 }
+
+.key-feture .mobile {
+	background: url('../image/mobile.png') no-repeat;
+}
+
+/*.key-feture .feture {
+	position: absolute;
+	top: 140px;
+	left: 140px;
+}*/
 
 .key-feature p {
 	font-family: 'GothamBook', sans-serif;
 	font-size: 15px;
-	margin-top: -45%;
 	margin-left: 5%;
 	margin-bottom: 5%;
 }
@@ -381,7 +389,7 @@ header #scrollDown {
 .key-feature .btn2,
 .key-feature .btn3 {
 	position: relative;
-	top: -80%;
+	top: 50%;
 	text-align: left;
 	text-transform: uppercase;
 	background: #11749e;
@@ -464,7 +472,54 @@ header #scrollDown {
 	color: #000000;
 }
 
-.maps {
+footer .contact {
+	text-align: center;
+	background: url(../image/bg3.jpg) no-repeat;
+	background-size: 100% 100%;
+	height: 850px;
+	color: #ffffff;
+}
+
+footer .contact h2 {
+	position: relative;
+	top: 200px;
+	text-transform: uppercase;
+	font-family: 'GothamMedium', sans-serif;
+	font-weight: bold;
+	font-size: 38px;
+	color: #ffffff;
+}
+
+footer .contact .c {
+	text-transform: uppercase;
+	font-family: 'Roboto';
+	font-weight: bold;
+	font-size: 250px;
+	opacity: 0.18;
+	color: #ffffff;
+	margin-top: -30px;
+}
+
+footer .contact input {
+	opacity: 0.2;
+	border: 3px #fff !important;
+	border-color: #fff;
+	color: #fff;
+	bor
+}
+
+footer .contact button {
+	font-family: 'GothamMedium';
+	font-size: 24px;
+	height: 65px;
+	width: 225px;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #11749e;
+	border-color: #11749e;
+}
+
+footer .maps {
 	background: url(../image/maps.jpg) no-repeat;
 	background-size: 100% 100%;
 	/*line-height: 4;*/
