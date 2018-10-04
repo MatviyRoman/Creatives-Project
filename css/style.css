@@ -18,7 +18,7 @@ body {
 	background-color: #000;
 	color: #fff;
 	font-size: normal;
-	/*max-width: 1440px;*/
+	max-width: 1440px;
 }
 
 header {
@@ -36,10 +36,16 @@ header .cs {
 	height: 66px;
 	padding-top: 10px;
 	text-align: center;
+	text-decoration: none;
 	font-weight: bold;
 	font-size: 30px;
 	font-family: 'Open-Sans', sans-serif;
 	text-transform: uppercase;
+}
+
+header .cs a {
+	text-decoration: none;
+	color: #fff;
 }
 
 header nav {
@@ -257,7 +263,7 @@ header #scrollDown {
 
 .blog h2 {
 	position: relative;
-	top: 125px;
+	top: 115px;
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	font-family: 'GothamMedium', sans-serif;
@@ -320,10 +326,10 @@ header #scrollDown {
 }
 
 .quick-action {
-	display: none;
 	background: #11749e;
-	text-align: center;
-	height: 350px;
+	/*height: 350px;*/
+	padding-top: 10%;
+	padding-bottom: 10%;
 }
 
 /*.quick-action .action1,
@@ -331,21 +337,22 @@ header #scrollDown {
 	height: 70px;
 }*/
 
-/*.quick-action .action1 img,
+.quick-action .action1 img,
 .quick-action .action2 img {
 	margin-right: 35px;
+	margin-bottom: 60px;
+	/*height: 70px;
+	width: 70%;*/
 	float: left;
-}*/
+}
 
 .quick-action .action1 p,
 .quick-action .action2 p {
 	font-size: 15px;
 	font-family: 'Gotham', sans-serif;
-	font-weight: normal;
+	/*font-weight: normal;*/
 	color: #ffffff;
-	text-align: center;
-	height: 70px;
-	width: 300px;
+	/*height: 30px !important;*/
 }
 
 .key-feature {
@@ -356,13 +363,9 @@ header #scrollDown {
 
 .key-feture .mobile {
 	background: url('../image/mobile.png') no-repeat;
+	background-size: 100% 100%;
+	height: 356px;
 }
-
-/*.key-feture .feture {
-	position: absolute;
-	top: 140px;
-	left: 140px;
-}*/
 
 .key-feature p {
 	font-family: 'GothamBook', sans-serif;
@@ -482,7 +485,7 @@ footer .contact {
 
 footer .contact h2 {
 	position: relative;
-	top: 200px;
+	top: 190px;
 	text-transform: uppercase;
 	font-family: 'GothamMedium', sans-serif;
 	font-weight: bold;
@@ -492,7 +495,7 @@ footer .contact h2 {
 
 footer .contact .c {
 	text-transform: uppercase;
-	font-family: 'Roboto';
+	font-family: 'Roboto', sans-serif;
 	font-weight: bold;
 	font-size: 250px;
 	opacity: 0.18;
@@ -500,16 +503,53 @@ footer .contact .c {
 	margin-top: -30px;
 }
 
-footer .contact input {
-	opacity: 0.2;
-	border: 3px #fff !important;
-	border-color: #fff;
-	color: #fff;
-	bor
+footer .contact .form {
+	width: 90%;
+	text-decoration: none;
 }
 
+input[type=text] {
+	border: 2px solid white;
+	background: rgb(0,0,0);  
+    background: transparent\9;  
+    background: rgba(0,0,0,0);
+}
+
+::placeholder {
+    color: #fff;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #fff;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: #fff;
+}
+
+footer .contact .input {
+	color: #fff;
+	margin-bottom: 40px;
+	margin-right: 36px;
+	height: 45px;
+}
+
+footer .contact .phone {
+	color: #fff;
+	height: 45px;
+}
+
+footer .contact .message {
+	color: #fff;
+	padding-top: 5px;
+	padding-bottom: 150px;
+	margin-bottom: 45px;
+}
+
+
 footer .contact button {
-	font-family: 'GothamMedium';
+	font-family: 'GothamMedium', sans-serif;
 	font-size: 24px;
 	height: 65px;
 	width: 225px;
@@ -522,10 +562,39 @@ footer .contact button {
 footer .maps {
 	background: url(../image/maps.jpg) no-repeat;
 	background-size: 100% 100%;
-	/*line-height: 4;*/
+	height: 330px;
+}
+
+footer .maps .icon {
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	background: #fff;
+	color: red;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+}
+
+footer .maps p {
+	position: relative;
+	top: 120px;
+	left: 110px;
+}
+
+footer .maps a {
+	text-decoration: none;
+	color: #fff;
+}
+
+footer .maps a:hover {
+	color: #11749e;
+
 }
 
 footer .copyright {
+	background: url(../image/footer.jpg);
+	background-size: 100% 100%;
 	margin-top: 50px;
 	margin-bottom: 50px;
 	height: 100% !important;
