@@ -17,7 +17,6 @@
 body {
 	background-color: #000;
 	color: #fff;
-	font-size: normal;
 	max-width: 1440px;
 }
 
@@ -70,8 +69,24 @@ header nav a:hover {
 	padding-bottom: 25px;
 }
 
+header nav .menu {
+	position: relative;
+}
+
 header nav .social {
 	text-decoration: none;
+}
+
+
+header .socialBtn {
+	position: relative;
+	display: inline-block;
+	height: 10px;
+	font-size: 10px;
+}
+
+header nav .swap {
+	display: none;
 }
 
 header .border {
@@ -105,7 +120,6 @@ header .logo p {
 header .scroll {
 	position: relative;
 	bottom: 70px;
-	color: fff;
 	font-size: 20px;
 	font-family: 'Myriad Pro', sans-serif;
 	text-align: center;
@@ -173,7 +187,6 @@ header #scrollDown {
 .about-agency .w {
 	margin: 0;
 	padding: 0;
-	color: fff;
 	font-size: 250px;
 	opacity: 0.18;
 	font-family: 'Roboto', sans-serif;
@@ -289,13 +302,6 @@ header #scrollDown {
 	margin-bottom: 75px;
 }
 
-.blog .blog1,
-.blog .blog2,
-.blog .blog3,
- {
- 	padding-right: 20%; /* 30px; */
-}
-
 .blog .blog1 img,
 .blog .blog2 img,
 .blog .blog3 img,
@@ -320,7 +326,7 @@ header #scrollDown {
 .blog .blog4 p {
 	color: #222222;
 	font-family: 'MyriadPro', sans-serif;
-	font-weight: regular;
+	font-weight: normal;
 	font-size: 15px;
 	margin-bottom: 100px;
 }
@@ -350,7 +356,7 @@ header #scrollDown {
 .quick-action .action2 p {
 	font-size: 15px;
 	font-family: 'Gotham', sans-serif;
-	/*font-weight: normal;*/
+	font-weight: normal;
 	color: #ffffff;
 	/*height: 30px !important;*/
 }
@@ -358,29 +364,40 @@ header #scrollDown {
 .key-feature {
 	background: url('../image/bg2.jpg') no-repeat;
 	background-size: 100% 100%;
-	height: 850px;
+	padding-top: 15%;
+	padding-bottom: 20%;
+	/*height: 850px;*/
+	/*padding-top: 230px;*/
+	/*padding-bottom: 245px;*/
 }
 
-.key-feture .mobile {
+.key-feture .mobile img {
+	position: absolute !important;
+	top: 20%;
+	left: 100% !important;
 	background: url('../image/mobile.png') no-repeat;
 	background-size: 100% 100%;
-	height: 356px;
+	height: 656px;
 }
 
 .key-feature p {
+	position: relative;
+	left: -1%;
+	text-align: left;
 	font-family: 'GothamBook', sans-serif;
 	font-size: 15px;
-	margin-left: 5%;
+	/*margin-left: 5%;*/
 	margin-bottom: 5%;
 }
 
-.key-feature p>b {
+.key-feature h6 {
 	font-family: 'GothamMedium', sans-serif;
 	font-size: 25px;
 	font-weight: bold;
 	color: #ffffff;
 	text-transform: uppercase;
-	padding-bottom: 40px;
+	text-align: left;
+	padding-bottom: 40px !important;
 }
 
 .key-feature img {
@@ -391,8 +408,6 @@ header #scrollDown {
 .key-feature .btn1,
 .key-feature .btn2,
 .key-feature .btn3 {
-	position: relative;
-	top: 50%;
 	text-align: left;
 	text-transform: uppercase;
 	background: #11749e;
@@ -402,6 +417,19 @@ header #scrollDown {
 	padding-bottom: 13px;
 	padding-left: 20px;
 	margin-bottom: 25px;
+}
+
+.key-feature .btn1 {
+	width: 35% !important;
+	/*padding-right: 15%;*/
+}
+
+.key-feature .btn2 {
+	width: 37.5% !important;
+}
+
+.key-feature .btn3 {
+	width: 40% !important;
 }
 
 .ourTeam {
@@ -485,7 +513,7 @@ footer .contact {
 
 footer .contact h2 {
 	position: relative;
-	top: 190px;
+	top: 180px;
 	text-transform: uppercase;
 	font-family: 'GothamMedium', sans-serif;
 	font-weight: bold;
@@ -595,7 +623,7 @@ footer .maps a:hover {
 footer .copyright {
 	background: url(../image/footer.jpg);
 	background-size: 100% 100%;
-	margin-top: 50px;
-	margin-bottom: 50px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	height: 100% !important;
 }

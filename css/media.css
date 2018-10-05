@@ -1,17 +1,439 @@
-// Экстрамалые девайсы («телефоны», < 576px)
-// Нет @media, т.к. это по умолчанию в Bootstrap
+@media (max-width: 320px) {}
 
-// Малые девайсы («ландшафтные телефоны», >= 576px)
-@media (min-width: 576px) { ... }
+@media (max-width: 375px) {}
 
-// Средние девайсы («таблетки», >= 768px)
-@media (min-width: 768px) { ... }
+@media (max-width: 425px) {
+	header {
+		height: 450px !important;
+	}
 
-// Большие девайсы (десктопы, >= 992px)
-@media (min-width: 992px) { ... }
+	header .cs {
+	    top: 10px;
+	    left: -30px !important;
+	    width: 33px !important;
+	    height: 33px !important;
+	    font-size: 10px;
+	}
 
-// Экстрабольшие девайсы (большие десктопы, >= 1200px)
-@media (min-width: 1200px) { ... }
+	header .cs a {
+		position: relative;
+		left: -5px;
+	}
 
-// Здесь стили применятся от средних девайсов до XL-девайсов
-@media (min-width: 768px) and (max-width: 1199.98px) { ... }
+	header nav {
+		display: inline-block;
+		top: -30px;
+		left: 40px;
+		padding-bottom: 25px;
+		font-size: 8px !important;
+		text-align: center;
+	}
+
+	header nav a:not(.social),
+	header nav a:link:not(.social) {
+		margin-right: 20px !important;
+	}
+
+	header .logo {
+		top: 60px !important;
+	}
+
+	header .logo h1 {
+		font-size: 60px !important;
+	}
+
+	header .logo p {
+		font-size: 13px !important;
+		letter-spacing: 5px !important;
+	}
+
+	header .scroll {
+		bottom: -20px !important;
+		font-size: 10px !important;
+	}
+
+	header .scroll img {
+		width: 40px;
+		bottom: 50px !important;
+		font-size: 15px;
+	}
+
+	header .material-icons {
+		padding: 30px;
+		font-size: 30px;
+	}
+
+	header #scrollUp {
+		top: 120px !important;
+	}
+
+	header #scrollDown {
+		top: 120px !important;
+	}
+
+	.about-agency {
+		padding-bottom: 130px;
+	}
+
+	.about-agency .circle {
+		left: 130px !important;
+	}
+
+	.about-agency h2 {
+		top: 125px;
+		font-size: 20px;
+	}
+
+	.key-feture .mobile img {
+		display: none !important;
+	}
+
+	.ourTeam p {
+		font-size: 15px !important;
+		margin-bottom: 30px !important;
+	}
+
+	.ourTeam .team1 ,
+	.ourTeam .team2 ,
+	.ourTeam .team3 ,
+	.ourTeam .team4 {
+		position: relative;
+		left: 60px !important;
+		margin-bottom: 0 !important;
+		width: 270px !important;
+	}
+
+	.ourTeam .agent1 p:first-line,
+	.ourTeam .agent2 p:first-line,
+	.ourTeam .agent3 p:first-line,
+	.ourTeam .agent4 p:first-line {
+		text-align: left;
+		font-size: 25px;
+		padding-bottom: 15px;
+		width: 300px;
+	}
+
+	.ourTeam .agent1 p,
+	.ourTeam .agent2 p,
+	.ourTeam .agent3 p,
+	.ourTeam .agent4 p {
+		position: relative;
+		top: -60px;
+		left: -20px;
+		padding-left: 10px;
+		padding-top: 25px;
+		text-align: center;
+		font-size: 15px;
+		width: 320px;
+	}
+
+	.ourTeam .agent1 p,
+	.ourTeam .agent2 p,
+	.ourTeam .agent3 p {
+	border-bottom: 1px solid gray;
+	}
+
+	footer .contact {
+		height: 770px !important;
+	}
+
+	footer .contact h2 {
+		position: relative;
+		top: 155px !important;
+		font-size: 16px !important;
+	}
+
+	footer .contact .c {
+		font-size: 200px;
+		margin-top: -30px;
+	}
+
+	footer .contact .form {
+		width: 90%;
+	}
+
+	footer .contact .phone {
+		height: 45px;
+		margin-bottom: 30px;
+	}
+
+	footer .contact .message {
+		padding-top: 5px;
+		padding-bottom: 150px;
+		margin-bottom: 45px;
+	}
+
+	footer .contact button {
+		font-size: 20px !important;
+		height: 55px;
+		width: 180px;
+		padding-bottom: 20px;
+	}
+
+	footer .maps {
+		height: 130px !important;
+	}
+
+	footer .maps p {
+		top: 60px !important;
+		left: 30px !important;
+	}
+
+	footer .copyright {
+		padding-top: 20px !important;
+		padding-bottom: 20px !important;
+	}
+
+}
+
+@media (max-width: 768px) {
+	header .cs {
+		left: -50px;
+	}
+
+	header {
+		height: 550px !important;
+	}
+
+	header nav {
+		top: -30px;
+		padding-bottom: 25px;
+		font-size: 15px;
+	}
+
+	header nav a:not(.social),
+	header nav a:link:not(.social) {
+		margin-right: 20px !important;
+	}
+
+	header .logo {
+		top: -10px !important;
+	}
+
+	header .logo h1 {
+		font-size: 100px;
+		font-weight: bold;
+	}
+
+	header .logo p {
+		font-size: 20px;
+		letter-spacing: 10px;
+	}
+
+	header .scroll {
+		bottom: 100px;
+		font-size: 15px;
+	}
+
+	header .social {
+		display: none;
+		width: 10px !important;
+		font-size: 10px;
+	}
+
+	header .socialBtn {
+		position: relative;
+		top: -35px;
+		font-size: 10px;
+	}
+
+	header nav .swap {
+		position: relative;
+		/*top: -65px;*/
+		/*right: -530px;*/
+		height: 5px;
+		width: 5px;
+	}
+
+	header .border {
+		position: relative;
+		top: -88px;
+		border-top: 1px solid #767676;
+	}
+
+	.about-agency {
+		padding-bottom: 80px;
+	}
+
+	.about-agency .circle {
+		left: 10px;
+	}
+
+	.about-agency p {
+		margin-top: 20px;
+	}
+
+	.news .news-arena1 .newsText,
+	.news .news-arena2 .newsText,
+	.news .news-arena3 .newsText {
+		padding: 5% !important;
+	}
+
+	.news .news-arena4 .newsText {
+		padding: 5% !important;
+	}
+
+	.news .news-arena1 p,
+	.news .news-arena2 p,
+	.news .news-arena3 p,
+	.news .news-arena4 p {
+		font-size: 13px;
+	}
+
+	.blog .losung {
+		font-size: 25px;
+		margin-bottom: 50px;
+	}
+
+	.blog .blog1 p,
+	.blog .blog2 p,
+	.blog .blog3 p,
+	.blog .blog4 p {
+		font-size: 15px;
+		margin-bottom: 50px;
+	}
+
+	.key-feature {
+		padding-top: 10%;
+		padding-bottom: 15%;
+	}
+
+	.quick-action .action1 img,
+	.quick-action .action2 img {
+		margin-right: 35px;
+		margin-bottom: 90px;
+	}	
+
+	.ourTeam p {
+		font-size: 25px;
+		margin-bottom: 30px;
+	}
+
+	.ourTeam .team1,
+	.ourTeam .team2,
+	.ourTeam .team3,
+	.ourTeam .team4 {
+		margin-bottom: -30px;
+	}
+
+	.ourTeam .agent1 p:first-line,
+	.ourTeam .agent2 p:first-line,
+	.ourTeam .agent3 p:first-line,
+	.ourTeam .agent4 p:first-line {
+		font-size: 15px;
+		padding-bottom: 10px;
+	}
+
+	.ourTeam .agent1 p,
+	.ourTeam .agent2 p,
+	.ourTeam .agent3 p,
+	.ourTeam .agent4 p {
+		top: -50px;
+		padding-top: 15px;
+	}
+
+	footer .contact {
+	height: 700px;
+}
+
+	footer .contact h2 {
+		top: 160px;
+		font-size: 25px;
+	}
+
+	footer .contact .c {
+		font-size: 230px;
+		margin-top: -30px;
+	}
+
+	footer .contact .form {
+		width: 90%;
+	}
+
+	footer .contact .input {
+		margin-bottom: 30px;
+		margin-right: 25px;
+		height: 40px;
+	}
+
+	footer .contact .phone {
+		height: 40px;
+	}
+
+	footer .contact .message {
+		padding-top: 5px;
+		padding-bottom: 100px;
+		margin-bottom: 25px;
+	}
+
+
+	footer .contact button {
+		font-size: 24px;
+		height: 65px;
+		width: 225px;
+	}
+
+	footer .maps {
+		height: 250px;
+	}
+
+	footer .maps p {
+		top: 80px;
+		left: 110px;
+	}
+
+	footer .copyright {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+}
+
+/*// Большие девайсы (десктопы, >= 992px)
+@media (min-width: 992px) {}*/
+
+
+
+
+@media (max-width: 1024px) {
+	header {
+		height: 700px;
+	}
+
+	header .cs {
+		top: 10px;
+	}	
+
+	header nav a:not(.social),
+	header nav a:link:not(.social) {
+		margin-right: 30px;
+	}
+
+	header .logo {
+		top: 85px;
+	}
+
+	.news .news-arena1 .newsText,
+	.news .news-arena2 .newsText,
+	.news .news-arena3 .newsText {
+		padding-top: 10%;
+		padding-right: 10%;
+		padding-bottom: 5%;
+		padding-left: 10%;
+	}
+
+	.news .news-arena4 .newsText {
+		padding-top: 10%;
+		padding-right: 10%;
+		padding-bottom: 10%;
+		padding-left: 10%;
+	}
+
+	.key-feature {
+		padding-top: 10%;
+		padding-bottom: 15%;
+	}
+}
+
+/*// Здесь стили применятся от средних девайсов до XL-девайсов
+@media (min-width: 768px) and (max-width: 1199.98px) {}*/

@@ -18,6 +18,16 @@ $(window).on('load', function(){
 });
 
 
+/*Social show & hide*/
+
+$(window).on('load', function(){
+  $('.swap').click(function(){
+    $('.social').toggle();
+    $('.menu').toggle();
+  })
+})
+
+
 
 /*if ( display === true ) {
   $( 'header nav a' ).show();
@@ -29,7 +39,7 @@ $(window).on('load', function(){
 /*Toggle slide .about-agency & toggle text .scroll up&down*/
 
 $(window).on('load', function(){
-	$('.material-icons').click(function(){
+	$('.scroll .material-icons').click(function(){
 		$('.about-agency').slideToggle('slow', function(){
 			$('#scrollUp').toggle();
 			$('#scrollDown').toggle();
