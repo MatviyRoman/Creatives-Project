@@ -373,11 +373,11 @@ header .scrollDown {
 	/*padding-bottom: 245px;*/
 }
 
-.key-feture .mobile img {
+.key-feture .mobile {
 	position: absolute !important;
-	top: 20%;
-	left: 100% !important;
-	background: url('../image/mobile.png') no-repeat;
+	top: 20px;
+	left: 10px !important;
+	/*background: url('../image/mobile.png') no-repeat;*/
 	background-size: 100% 100%;
 	height: 656px;
 }
