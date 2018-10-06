@@ -370,10 +370,10 @@ header .scrollDown {
 	padding-bottom: 20%;
 }
 
-.key-feture img {
-	position: absolute;
-	top: 100px;
-	left: 300px !important;
+.key-feature img {
+    position: absolute;
+    margin-top: -5%;
+    margin-left: 61%;
 }
 
 .key-feature p {

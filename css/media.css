@@ -1,4 +1,18 @@
-@media (max-width: 320px) {}
+@media (max-width: 320px) {
+	.quick-action .action1 img,
+	.quick-action .action2 img {
+	    margin-right: 20px;
+	    margin-bottom: 131px !important;
+	}
+
+	i.swap.material-icons {
+	    left: 291px !important;
+	}
+
+	footer .contact h2 {
+	    font-size: 12px !important;
+	}
+}
 
 @media (max-width: 375px) {
 	header .cs {
@@ -159,8 +173,20 @@
 		font-size: 20px;
 	}
 
-	.key-feture .mobile img {
-		display: none !important;
+	.key-feature img {
+		display: none;
+	}
+
+	.key-feature .btn1 {
+	    width: 70% !important;
+	}
+
+	.key-feature .btn2 {
+	    width: 77% !important;
+	}
+
+	.key-feature .btn3 {
+	    width: 84% !important;
 	}
 
 	.ourTeam p {
@@ -214,7 +240,7 @@
 	footer .contact h2 {
 		position: relative;
 		top: 155px !important;
-		font-size: 16px !important;
+		font-size: 14px !important;
 	}
 
 	footer .contact .c {
@@ -359,6 +385,13 @@
 	.key-feature {
 		padding-top: 10%;
 		padding-bottom: 15%;
+	}
+
+	.key-feature img {
+	    position: absolute;
+	    margin-top: 6% !important;
+	    margin-left: 61% !important;
+	    height: 400px !important;
 	}
 
 	.quick-action .action1 img,
@@ -508,6 +541,12 @@
 	.key-feature {
 		padding-top: 10%;
 		padding-bottom: 15%;
+	}
+
+	.key-feature img {
+	    position: absolute;
+	    margin-top: -7%;
+	    margin-left: 61%;
 	}
 }
 

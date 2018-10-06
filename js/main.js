@@ -39,7 +39,7 @@ if (screen.width <= 425) {
 } else if (screen.width <=375) {
   $('header nav').attr('style', 'font-size: 7px !important;');
 } else if (screen.width <=320) {
-  alert('More than 960');
+  $('.swap').attr('style', 'left: 291px !important;');
 }
 
 
