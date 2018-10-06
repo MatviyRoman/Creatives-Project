@@ -1,10 +1,49 @@
 @media (max-width: 320px) {}
 
-@media (max-width: 375px) {}
+@media (max-width: 375px) {
+	header .cs {
+	    top: 20px;
+	    background-color: #11749e;
+	    box-shadow: 8px 8px #fff;
+	    width: 66px;
+	    height: 66px;
+	    padding-top: 10px;
+	}
+
+
+	i.swap.material-icons {
+	    left: 346px !important;
+	}
+
+	header nav {
+	    top: -30px;
+	    left: -18px !important;
+	    padding-bottom: 25px;
+	    font-size: 7px !important;
+	    font-weight: normal;
+	}
+
+	header nav a {
+		margin-right: 5px !important;
+	}
+
+	.ourTeam .team1, .ourTeam .team2, .ourTeam .team3, .ourTeam .team4 {
+	    position: relative;
+	    left: 40px !important;
+	    width: 270px !important;
+	}
+
+}
 
 @media (max-width: 425px) {
+	/*header {
+		background: #4b6178 url("../image/bg1.jpg") no-repeat;
+		background-size: 100% 100% !important;
+		height: 800px;
+	}*/
+
 	header {
-		height: 450px !important;
+    	height: 379px !important;
 	}
 
 	header .cs {
@@ -18,57 +57,93 @@
 	header .cs a {
 		position: relative;
 		left: -5px;
+		font-size: 10px;
 	}
 
 	header nav {
-		display: inline-block;
 		top: -30px;
-		left: 40px;
+		left: -12px;
 		padding-bottom: 25px;
 		font-size: 8px !important;
+		font-weight: normal;
 		text-align: center;
 	}
 
-	header nav a:not(.social),
-	header nav a:link:not(.social) {
+	header nav a:not(.socialIcon),
+	header nav a:link:not(.socialIcon) {
 		margin-right: 20px !important;
 	}
 
+	header nav .menu {
+	}
+
+	header nav .socialIcon {
+		display: none;
+		position: relative;
+		top: -10px;
+	}
+
+	header nav .socialIcon img {
+		width: 15px;
+	}
+
+	a.socialIcon.active,
+	a.socialIcon:hover {
+		border-bottom: 5px solid #11749e;
+		padding-bottom:19px;
+	}
+
+	i.swap.material-icons {
+	    display: block;
+	    position: absolute;
+	    top: 14px;
+    	left: 388px;
+	}
+
 	header .logo {
-		top: 60px !important;
+	    top: 63px !important;
 	}
 
 	header .logo h1 {
-		font-size: 60px !important;
+		font-size: 50px !important;
 	}
 
 	header .logo p {
-		font-size: 13px !important;
+		font-size: 10px !important;
 		letter-spacing: 5px !important;
 	}
 
 	header .scroll {
-		bottom: -20px !important;
-		font-size: 10px !important;
+	    font-size: 5px !important;
 	}
 
 	header .scroll img {
-		width: 40px;
+		margin-top: 84px;
+		width: 30px;
 		bottom: 50px !important;
 		font-size: 15px;
 	}
 
-	header .material-icons {
-		padding: 30px;
-		font-size: 30px;
-	}
-
 	header #scrollUp {
-		top: 120px !important;
+		top: 40px !important;
+		font-size: 15px !important;
 	}
 
 	header #scrollDown {
-		top: 120px !important;
+		top: 40px !important;
+		font-size: 15px !important;
+	}
+
+	header .border {
+	    position: relative;
+	    top: -27px !important;
+	}
+
+	header .border1 {
+		display: none;
+	    position: relative;
+		top: -45px;
+		border-top: 2px solid white;
 	}
 
 	.about-agency {
@@ -99,7 +174,6 @@
 	.ourTeam .team4 {
 		position: relative;
 		left: 60px !important;
-		margin-bottom: 0 !important;
 		width: 270px !important;
 	}
 
@@ -201,13 +275,15 @@
 		font-size: 15px;
 	}
 
-	header nav a:not(.social),
-	header nav a:link:not(.social) {
+	header nav a:not(.socialIcon),
+	header nav a:link:not(.socialIcon) {
 		margin-right: 20px !important;
 	}
 
 	header .logo {
-		top: -10px !important;
+	    position: relative;
+	    text-align: center;
+	    top: 63px !important;
 	}
 
 	header .logo h1 {
@@ -221,33 +297,20 @@
 	}
 
 	header .scroll {
-		bottom: 100px;
-		font-size: 15px;
+	    bottom: 161px;
+	    font-size: 15px;
 	}
 
-	header .social {
-		display: none;
-		width: 10px !important;
-		font-size: 10px;
-	}
-
-	header .socialBtn {
-		position: relative;
-		top: -35px;
-		font-size: 10px;
-	}
-
-	header nav .swap {
-		position: relative;
-		/*top: -65px;*/
-		/*right: -530px;*/
-		height: 5px;
-		width: 5px;
+	header #scrollUp,
+	header #scrollDown {
+	    padding: 34px !important;
+	    font-size: 20px;
+	    top: 148px !important;
 	}
 
 	header .border {
 		position: relative;
-		top: -88px;
+		top: -30px;
 		border-top: 1px solid #767676;
 	}
 
@@ -368,7 +431,7 @@
 
 
 	footer .contact button {
-		font-size: 24px;
+		font-size: 20px;
 		height: 65px;
 		width: 225px;
 	}
@@ -404,9 +467,22 @@
 		top: 10px;
 	}	
 
-	header nav a:not(.social),
-	header nav a:link:not(.social) {
+	header nav a:not(.socialIcon),
+	header nav a:link:not(.socialIcon) {
 		margin-right: 30px;
+	}
+
+	header #scrollUp,
+	header #scrollDown {
+	    position: relative;
+	    top: 123px;
+	}
+
+	header #scrollUp, 
+	header #scrollDown {
+	    padding: 14px;
+	    color: #fff !important;
+	    font-size: 20px;
 	}
 
 	header .logo {
@@ -425,7 +501,7 @@
 	.news .news-arena4 .newsText {
 		padding-top: 10%;
 		padding-right: 10%;
-		padding-bottom: 10%;
+		padding-bottom: 5%;
 		padding-left: 10%;
 	}
 

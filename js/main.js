@@ -22,10 +22,35 @@ $(window).on('load', function(){
 
 $(window).on('load', function(){
   $('.swap').click(function(){
-    $('.social').toggle();
+    $('.socialIcon').toggle();
     $('.menu').toggle();
+    $('.border').toggle();
+    $('.border1').toggle();
   })
 })
+
+
+if (screen.width <= 425) {
+  $('header').attr('style', 'height: 325px !important');
+  $('body').attr('style', 'max-width: 425px !important;');
+  $('.logo').attr('style', 'top: 29px !important;');
+  $('.scrollUp').attr('style', 'font-size: 14px !important;');
+  $('.scrollDown').attr('style', 'font-size: 14px !important;');
+} else if (screen.width <=375) {
+  $('header nav').attr('style', 'font-size: 7px !important;');
+} else if (screen.width <=320) {
+  alert('More than 960');
+}
+
+
+
+
+// function screenClass() {
+//     if($(window).innerWidth() > 425) {
+//       $('header').attr('style', 'height: 353px !important');
+//     }
+//   }
+
 
 
 
